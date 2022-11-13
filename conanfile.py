@@ -13,7 +13,7 @@ class ConanCargoWrapper(Generator):
     def content(self):
         template = '''
   
-fn main() {
+pub fn main() {
 }
 
 pub const LIB_PATHS: &'static [ &'static str ] = &[%(lib_paths)s];
